@@ -1,12 +1,107 @@
-# CDW_in_coupled_chains
-MATLAB codes for simulating the total energy and the phase diagrams of 1D coupled atomic chains in the manuscript https://arxiv.org/abs/2602.23208, by A. Garcia-Ruiz et al.
+# CDW in Coupled Chains
 
-Figure_1.m: It plots the total energy (upper panel) and the CDW/normal state phase diagram (lower panel) of a 1D atomic chain, as a function of rigidity and doping. 
+MATLAB codes for simulating the total energy and phase diagrams of 1D coupled atomic chains, as presented in:
 
-Figure_2.m: It plots the total energy for different rigidities (upper panel) and the phase diagrams of two parallel-coupled atomic chains, as a function of rigidity and inter-chain strength (middle panel) and rigidity and doping (lower panel).
+https://arxiv.org/abs/2602.23208  
+*A. Garcia-Ruiz et al.*
 
-Figure_3.m: It plots the phase diagrams for N parallel-coupled chains, as a function of rigidity and inter-chain coupling (upper panels) and rigidity and doping level (lower panels).
+---
 
-Figure_4.m: It plots the total energy for a rigidity of kappa = 0.7 and different doping levels (upper panel) and the phase diagrams of two skewed-coupled atomic chains, as a function of rigidity and inter-chain strength (middle panel) and rigidity and doping (lower panel).
+## Overview
 
-Figure_5.m: It plots the phase diagram of N skewed-coupled 1D atomic chains as a function of rigidity and doping. 
+This repository contains MATLAB scripts used to generate the figures in the manuscript. The code computes total energies and phase diagrams of charge-density-wave (CDW) states in coupled 1D atomic chains as a function of:
+
+- Rigidity
+- Doping level
+- Inter-chain coupling strength
+- Number of chains
+- Relative chain geometry (parallel / skewed)
+
+---
+
+## Contents
+
+<details>
+<summary><b>Figure 1 — Single chain</b></summary>
+
+- Computes total energy of a single 1D atomic chain
+- Produces CDW vs normal-state phase diagram
+- Parameters: rigidity, doping
+
+File:
+- `Figure_1.m`
+
+</details>
+
+---
+
+<details>
+<summary><b>Figure 2 — Two parallel chains</b></summary>
+
+- Total energy vs rigidity
+- Phase diagrams for coupled chains:
+  - rigidity vs inter-chain coupling
+  - rigidity vs doping
+
+File:
+- `Figure_2.m`
+
+</details>
+
+---
+
+<details>
+<summary><b>Figure 3 — N parallel chains</b></summary>
+
+- Phase diagrams for multiple coupled chains
+- Includes:
+  - rigidity vs inter-chain coupling
+  - rigidity vs doping
+
+File:
+- `Figure_3.m`
+
+</details>
+
+---
+
+<details>
+<summary><b>Figure 4 — Two skewed chains</b></summary>
+
+- Total energy for fixed rigidity (κ = 0.7)
+- Phase diagrams:
+  - rigidity vs inter-chain coupling
+  - rigidity vs doping
+
+File:
+- `Figure_4.m`
+
+</details>
+
+---
+
+<details>
+<summary><b>Figure 5 — N skewed chains</b></summary>
+
+- Phase diagram of skewed-coupled chains
+- Parameters:
+  - rigidity
+  - doping
+
+File:
+- `Figure_5.m`
+
+</details>
+
+---
+
+## Usage
+
+Run each script in MATLAB:
+
+```matlab
+Figure_1
+Figure_2
+Figure_3
+Figure_4
+Figure_5
